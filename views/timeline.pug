@@ -1,18 +1,27 @@
 extends layout
-
 block content
-  link(rel='stylesheet', href='/public/css/timeline.css')
-  h1= title
-  button.btn.day7='一周数据'
-   button.btn.day30='30天数据'
-   div.canvas
-      canvas#timeline
-      div.buttons
-      div.points
-      div.alert
-         div.msg_box
-            div.msg_pan
-               div.msg
-               div.close
-                  img(src='/public/imgs/close.png',title='点击关闭')
-  script(src='/public/js/timeline.js')
+ link(rel='stylesheet', href='/public/css/timeline.css')
+ div.info
+  img.face.sex_girl(src='/public/imgs/faces/1.jpg')
+  
+  div.age='1988-02-29'
+  div.name.sex_girl
+   span='韩梅梅' 
+  div.age_pan
+   div.age_border
+    div.age_value
+   div.age_text_border 
+    div.age_text='28岁'
+    div.age_text_sj
+ button.btn.day7='一周数据'
+ button.btn.day30='30天数据'
+ div.canvas
+  canvas#timeline
+  div.buttons
+  div.points
+ div.alert
+  div.msg_box
+   div.msg_pan
+    div.msg
+    div.close(title='点击关闭')
+ script(src='/public/js/timeline.js')

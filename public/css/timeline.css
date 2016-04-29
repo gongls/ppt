@@ -67,6 +67,8 @@ body{
     background: #f00;
     border-radius: 50%;
     cursor: pointer;
+    background: url('/public/imgs/close.png');
+    background-size: 100%;
 }
 .alert .msg_box .close img{
     width: 100%;
@@ -100,13 +102,97 @@ td,th{
 .weight_msg{
     margin: 20px auto;
 }
-h1 {
-    background: #ccc;
+.nav {
+    background: rgba(0,0,0,0.1);
     border-radius: 0 0 20px 20px;
-    height: 60px;
-    line-height: 60px;
+    height: 80px;
+    line-height: 80px;
     color: #fff;
 }
+.face{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px auto;
+}
+.sex_girl{
+    border: solid 8px pink;
+}
+.name{
+    width: 140px;
+    margin: 20px auto;
+}
+.name.sex_girl{
+    border:none;
+    background-size: 30px;
+    background-image: url('/public/imgs/girl.png');
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+}
+.name span{
+    margin: 0 0 0 40px;
+    font-size: 30px;
+}
+.sex{
+    width: 40px;
+    height: 40px;
+    margin: 0px auto;
+}
+.name{
+    font-size: 30px;
+    line-height: 40px;
+}
+.age_pan{
+    width: 500px;
+    height: 20px;
+    margin: 50px auto;
+    position: relative;
+}
+.age_border{
+    width: 500px;
+    height: 20px;
+    background: #fff;
+    border:solid 2px #f00;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.age_value{
+    width: 50%;
+    height: 20px;
+    background: yellow;
+}
+.age_text_border{
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    
+}
+.age_text{
+    position: absolute;
+    top: 0px;
+    width: 50px;
+    height:30px;
+    left: -25px;
+    line-height: 30px;
+    background: #ccc;
+    border-radius: 5px;
+    color: #fff;
+}
+.age_text_sj{
+    content: '';
+    position: absolute;
+    background:transparent;
+    width: 0px;
+    height: 0px;
+    border-top: solid 12px #ccc;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    top: 30px;
+    left: -5px;
+}
+
 .navigation{
     /* position: fixed;
     top: 0;

@@ -67,7 +67,7 @@ $(document).ready(function(){
         $('.buttons').css('top',height-padding*2+'px');
         $('.buttons').css('left',padding*2+'px');
 
-        var $button=$('<button class="btn">All</button>');
+        var $button=$('<button class="btn">全部</button>');
         $button.text(timeline.name);
         $button.css('background',timeline.line_color);
         $button.css('color','#f00');
@@ -257,9 +257,11 @@ $(document).ready(function(){
                         $btn.bind('click',function(){
                             $('.msg').html('');
                             var html='';
-                            html+='<h3>详细：</h3>';
+                            html+='<h1>死翘翘</h1>';
                             html+='<p>时间:'+test.time+'</p>';
-                            html+='<p>value:'+test.value+'</p>';
+                            if(test.value===180){
+                                html+='<img src="/public/imgs/over.jpg" width="180">';
+                            }
                             $('.msg').html(html);
                             $('.alert').show();
                         });
