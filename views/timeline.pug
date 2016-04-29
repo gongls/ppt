@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='/public/css/timeline.css')
+  h1= title
+  button.btn.day7='一周数据'
+   button.btn.day30='30天数据'
+   div.canvas
+      canvas#timeline
+      div.buttons
+      div.points
+      div.alert
+         div.msg_box
+            div.msg_pan
+               div.msg
+               div.close
+                  img(src='/public/imgs/close.png',title='点击关闭')
+  script(src='/public/js/timeline.js')
